@@ -9,37 +9,36 @@
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-DUmdgUd5.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-BXPDI42B.css">
   </head>
   <body>
-      <main>
-      <div class="container">
+    <main>
+      <div class="snackbar-container">
         <a class="back-link" href="./index.html">Go back</a>
-        <h1 class="main-title">
-          Snackbar
-        </h1>
-        <form class="form">
-  <label>
-    Delay (ms)
-    <input type="number" name="delay" required />
-  </label>
+        <h1 class="main-title">Snackbar</h1>
 
-  <fieldset>
-    <legend>State</legend>
-    <label>
-      <input type="radio" name="state" value="fulfilled" required />
-      Fulfilled
-    </label>
-    <label>
-      <input type="radio" name="state" value="rejected" required />
-      Rejected
-    </label>
-  </fieldset>
+        <form class="snackbar-form">
+          <label class="form-label">
+            Delay (ms)
+            <input type="number" name="delay" required />
+          </label>
 
-  <button type="submit">Create notification</button>
-</form>
+          <fieldset class="form-fieldset">
+            <legend>State</legend>
+            <label>
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label>
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </fieldset>
 
+          <button type="submit">Create notification</button>
+        </form>
       </div>
-    </main>  
+    </main>
+
   </body>
 </html>
