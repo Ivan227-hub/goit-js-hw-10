@@ -1,46 +1,46 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background-color: #f3f4f6;
-  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  padding: 0;
 }
 
-.section {
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+.timer-container {
   text-align: center;
-  color: #0078d7;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
 input[type='text'],
-input[type='number'] {
-  width: 100%;
-  padding: 10px;
+input[type='datetime-local'] {
+  padding: 8px 10px;
   font-size: 16px;
-  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 button {
-  display: block;
-  width: 100%;
-  padding: 10px;
+  padding: 8px 16px;
   background-color: #0078d7;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
 }
 
 button:disabled {
@@ -50,8 +50,9 @@ button:disabled {
 
 .timer {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .field {
@@ -60,37 +61,17 @@ button:disabled {
 
 .value {
   display: block;
-  font-size: 28px;
-  font-weight: bold;
-  color: #0078d7;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
 }
 
 .label {
   display: block;
   font-size: 14px;
-  color: #666;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-fieldset {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-legend {
-  font-weight: bold;
-}
-
-label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /**
@@ -111,5 +92,3 @@ label {
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
-
-
