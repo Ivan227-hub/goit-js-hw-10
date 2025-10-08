@@ -12,6 +12,13 @@ body {
   text-align: center;
 }
 
+/* Новое: заголовок Timer черный */
+.timer-container h1 {
+  color: #000;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
 .input-wrapper {
   display: flex;
   justify-content: center;
@@ -31,7 +38,7 @@ input[type='datetime-local'] {
 button {
   padding: 8px 16px;
   background-color: #0078d7;
-  color: #fff;
+  color: #000; /* теперь текст кнопки черный */
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -73,6 +80,7 @@ button:disabled {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 /* ===== Snackbar page styles ===== */
 
 .snackbar-container {
@@ -135,7 +143,7 @@ input[type='number'] {
 button[type='submit'] {
   margin-top: 10px;
   background-color: #ccc; /* серый фон */
-  color: #fff; /* белый текст */
+  color:  #000; 
   border: none;
   border-radius: 6px;
   padding: 10px;
