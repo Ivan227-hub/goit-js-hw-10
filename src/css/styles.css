@@ -121,7 +121,7 @@ input[type='number'] {
 }
 
 .form-fieldset {
-  border: 1px solid #ccc;
+  border:none;
   border-radius: 6px;
   padding: 10px 15px;
   text-align: left;
